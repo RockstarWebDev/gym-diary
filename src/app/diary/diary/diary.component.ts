@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ExerciseSetList } from '../interfaces/exercise-set';
+import { ExerciseSet, ExerciseSetList } from '../interfaces/exercise-set';
 
 @Component({
   selector: 'app-diary',
@@ -20,5 +20,11 @@ export class DiaryComponent {
       { id: '3', date: new Date(), exercise: 'Barbell row', reps: 15, sets: 3 },
       { id: '4', date: new Date(), exercise: 'Leg Press', reps: 15, sets: 3 },
     ];
+  }
+  addExercise(newSet: ExerciseSet) {
+    this.exerciseList.push(newSet);
+  }
+  itemTrackByfn(index: number, item: ExerciseSet) {
+    return item.id;
   }
 }
