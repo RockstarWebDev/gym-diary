@@ -8,8 +8,4 @@ import { ExerciseSet, ExerciseSetList } from '../interfaces/exercise-set';
 })
 export class EntryItemComponent {
   @Input('exercise-set') exerciseSet!: ExerciseSet;
-
-  itemTrackBy(index: number, item: ExerciseSet) {
-    return item.id;
-  }
 }
