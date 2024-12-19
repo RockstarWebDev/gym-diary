@@ -27,4 +27,15 @@ export class DiaryComponent {
   itemTrackByfn(index: number, item: ExerciseSet) {
     return item.id;
   }
+
+  deleteItem(id: string) {
+    this.exerciseList = this.exerciseList.filter((item) => item.id !== id);
+  }
+  newRep(exerciseSet: ExerciseSet) {
+    const id = exerciseSet.id;
+    const i = this.exerciseList.findIndex((item) => item.id === id);
+    if (i >= 0) {
+      this.exerciseList[i] = { ...exerciseSet };
+    }
+  }
 }
