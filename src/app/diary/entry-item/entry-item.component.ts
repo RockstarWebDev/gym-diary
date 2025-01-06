@@ -1,5 +1,5 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { ExerciseSet, ExerciseSetList } from '../interfaces/exercise-set';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { ExerciseSet } from '../interfaces/exercise-set';
 
 @Component({
   selector: 'app-entry-item',
@@ -17,11 +17,11 @@ export class EntryItemComponent {
 
   newRep() {
     const reps = ++this.exerciseSet.reps;
-
     const newItem: ExerciseSet = {
       ...this.exerciseSet,
       reps,
     };
+    console.log(newItem);
     this.newRepEvent.emit(newItem);
   }
 }
