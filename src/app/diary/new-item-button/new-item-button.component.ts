@@ -16,8 +16,7 @@ export class NewItemButtonComponent {
     const sets = 4;
     const exercise = 'Leg Press';
 
-    const newExercise: ExerciseSet = { id, date, reps, sets, exercise };
-
-    this.newExerciseEvent.emit(newExercise);
+    const newExerciseSet: ExerciseSet = { id, date, reps, sets, exercise };
+    this.newExerciseEvent.emit(newExerciseSet);
   }
 }
