@@ -25,9 +25,10 @@ export class DiaryComponent implements OnInit {
   }
 
   addExercise(newSet: ExerciseSet) {
-    this.exerciseSetsService.addNewItem(newSet).subscribe((exerciseSet) => {
-      this.exerciseList = [...this.exerciseList, exerciseSet];
-    });
+    // this.exerciseSetsService.addNewItem(newSet).subscribe((exerciseSet) => {
+    //   this.exerciseList = [...this.exerciseList, exerciseSet];
+    // });
+    this.router.navigate(['/home/new-template']);
   }
 
   deleteItem(id: string) {

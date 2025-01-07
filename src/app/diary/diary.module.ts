@@ -9,6 +9,7 @@ import { ListEntriesComponent } from './list-entries/list-entries.component';
 import { NewItemButtonComponent } from './new-item-button/new-item-button.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { NewEntryFormTemplateComponent } from './new-entry-form-template/new-entry-form-template.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     EntryItemComponent,
     ListEntriesComponent,
     NewItemButtonComponent,
+    NewEntryFormTemplateComponent
   ],
   imports: [CommonModule, DiaryRoutingModule, RouterModule, FormsModule],
 })
