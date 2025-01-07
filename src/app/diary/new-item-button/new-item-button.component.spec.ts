@@ -6,10 +6,12 @@ describe('NewItemButtonComponent', () => {
   let component: NewItemButtonComponent;
   let fixture: ComponentFixture<NewItemButtonComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [NewItemButtonComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ NewItemButtonComponent ]
+    })
+    .compileComponents();
+
     fixture = TestBed.createComponent(NewItemButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

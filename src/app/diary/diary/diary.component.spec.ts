@@ -2,14 +2,16 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DiaryComponent } from './diary.component';
 
-describe('DiaryComponent', () => {
+describe('ListEntriesComponent', () => {
   let component: DiaryComponent;
   let fixture: ComponentFixture<DiaryComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [DiaryComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ DiaryComponent ]
+    })
+    .compileComponents();
+
     fixture = TestBed.createComponent(DiaryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
