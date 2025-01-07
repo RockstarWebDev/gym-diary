@@ -8,6 +8,7 @@ const routes: Routes = [
     path: '',
     component: DiaryComponent,
   },
+
   {
     path: 'new-template',
     component: NewEntryFormTemplateComponent,
