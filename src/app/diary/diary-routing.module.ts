@@ -6,6 +6,7 @@ const routes: Routes = [
     path: '',
     component: DiaryComponent,
   },
+
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
